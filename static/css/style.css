@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: #F5F7F9;
+    font-family: 'Nunito', sans-serif;
+    color: #2b5182;
+}
+
+nav {
+    font-weight: 500;
+    height: 8vh;
+    color: #8994a5;
+    background: white;
+    position: fixed;
+    width: 1904px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    margin-left: 900px;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #8994a5;
+    transition: .3s ease-in-out;
+}
+
+a:hover {
+    color: #083a77;
+    text-decoration: none;
+
+}
+
+.logo {
+    color: #2b5182;
+    text-transform: uppercase;
+    font-size: 18px;
+    float: left;
+    padding: 20px;
+    margin-right: 60px;
+}
+
+
+/* Home  */
+
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #2b5182;
+}
+
+.intro-name {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+
+/* About */
+.about-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.about-me .text {
+    width: 70%;
+    margin-left: 250px;
+}
+
+.about-me .text h2 {
+    font-size: 2.5rem;
+}
+
+.about-me .text p {
+    font-size: 1.2;
+}
+
+.about-me .image img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border: 3px solid #2b5182;
+    border-radius: 300px;
+    margin-left: 30px;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.social-links ul li {
+    padding: 10px 35px;
+}
+
+
+
+/* Projects Section  */
+.project-section {
+    height: 100vh;
+}
+
+/* Meida queries for making the page repsonsive */
+
+@media screen and (max-width: 768px){
+
+    #introduction {
+        
+    }
+
+    .line {
+        width: 30px;
+        height: 2px;
+        background-color: #2b5182;
+        margin: 5px;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: fixed;
+        /* background-color: #EAECEE; */
+        background: white;
+        height: 100vh;
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        /* display: none; */
+        clip-path: circle(100px at 90% -25%);
+        -webkit-clip-path: circle(100px at 90% -25%);
+        transition: all 1s ease-out;
+
+    }
+
+    .nav-links.open {
+        clip-path: circle(1250px at 90% -25%);
+        -webkit-clip-path: circle(1250px at 90% -25%);
+    }
+
+    #social-links {
+        top: 194%;
+    }
+}
