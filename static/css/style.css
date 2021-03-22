@@ -175,11 +175,15 @@ a:hover {
     margin: 10px;
 }
 
-.project .card-buttons button {
+.project .card-buttons a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     margin: 10px;
     outline: none;
-    width: 100px;
+    width: 143px;
     height: 45px;
+    padding: 10px 30px;
 }
 
 /* Meida queries for making the page repsonsive */
@@ -276,6 +280,12 @@ a:hover {
 
     .project .card-buttons {
         display: flex;
+    }
+
+    .project .card-buttons a {
+        padding: 10px 5px;  
+        height: 45px;
+        width: 100px;
     }
 
     .project h1 {
