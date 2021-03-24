@@ -186,6 +186,68 @@ a:hover {
     padding: 10px 30px;
 }
 
+/* Contact Section */
+.contact-section {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 
+}
+
+.contact-section h4 {
+    text-align: center;
+}
+
+.callback-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.callback-form label {
+    display: block;
+    margin-bottom: 3px;
+    color: #2b5182;
+}
+  
+.callback-form .form-control {
+    margin-bottom: 15px;
+    border: 0px solid white;
+}
+  
+  
+.callback-form input, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    border: #2b5182c9 1px solid;
+    border-radius: 10px;
+    outline: none;
+} 
+
+.callback-form input {
+    border-bottom: #2b5182c9 2px solid;
+}
+
+.callback-form .submit-button {
+    position: relative;
+    border: 1px solid #2b5182;
+    border-radius: 40px;
+    color: #2b5182;
+    background-color: white;
+    width: 50%;
+    padding: 5px 10px;
+    margin: 0 auto 0 auto;
+    transition: .5s ease-in-out;
+}
+
+.callback-form .submit-button:hover {
+    color: white;
+    background-color: #2b5182;
+}
+    
 /* Meida queries for making the page repsonsive */
 
 @media screen and (max-width: 768px){
